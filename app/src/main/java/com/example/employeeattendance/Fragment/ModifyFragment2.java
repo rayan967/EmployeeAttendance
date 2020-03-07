@@ -229,26 +229,46 @@ public class ModifyFragment2 extends Fragment {
         del.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mViewModel.delete(user);
+
                 final View.OnClickListener listener=this;
 
+                new MaterialAlertDialogBuilder(getActivity())
+                        .setTitle("Warning")
+                        .setMessage("Do you want to permanently delete the Employee's data?")
+                        .setNegativeButton("No", null)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                final LottieAnimationView animationView=view.findViewById(R.id.animation_view);
+                                animationView.playAnimation();
+                                animationView.enableMergePathsForKitKatAndAbove( true );
+                                animationView.setVisibility(View.VISIBLE);
+                                mViewModel.delete(user);
 
-                mViewModel.getChanged().observe(getActivity(), new Observer<Boolean>() {
-                    @Override
-                    public void onChanged(Boolean isSuccessful) {
-                        if(isSuccessful){
-                            Snackbar.make(view,"User Deleted", Snackbar.LENGTH_SHORT).show();
-                            getActivity().onBackPressed();
-                        }
-                        if(!isSuccessful)
-                        {
-                            Snackbar.make(view,"An Error Occurred", Snackbar.LENGTH_SHORT)
-                                    .setAction("RETRY", listener)
-                                    .show();
-                        }
-                    }
-                });
-                del.setOnClickListener(null);
+
+                                mViewModel.getChanged().observe(getActivity(), new Observer<Boolean>() {
+                                    @Override
+                                    public void onChanged(Boolean isSuccessful) {
+                                        if(isSuccessful){
+                                            animationView.pauseAnimation();
+                                            animationView.setVisibility(View.GONE);
+                                            Snackbar.make(view,"User Deleted", Snackbar.LENGTH_SHORT).show();
+                                            getActivity().onBackPressed();
+                                        }
+                                        if(!isSuccessful)
+                                        {
+                                            animationView.pauseAnimation();
+                                            animationView.setVisibility(View.GONE);
+                                            Snackbar.make(view,"An Error Occurred", Snackbar.LENGTH_SHORT)
+                                                    .setAction("RETRY", listener)
+                                                    .show();
+                                        }
+                                    }
+                                });
+                                del.setOnClickListener(null);
+                            }
+                        }).show();
+
             }
         });
 

@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/firasanslight"
-            android:text="Name"
+            android:text="@string/name"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/recyclerview"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/firasanslight"
-            android:text="Mode"
+            android:text="@string/mode"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/recyclerview"
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/firasanslight"
-            android:text="Time"
+            android:text="@string/time"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/recyclerview"
@@ -134,7 +134,8 @@
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.551"
-        app:layout_constraintWidth_percent="0.09" />
+        app:layout_constraintWidth_percent="0.09"
+        android:contentDescription="@string/todo" />
 
 
     <TextView
@@ -143,7 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:fontFamily="@font/firasans"
-        android:text="Attendance Log"
+        android:text="@string/attendance_log"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:transitionName="@string/attendance_log"
