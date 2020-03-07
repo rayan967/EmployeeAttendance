@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1012538642467",
+    "firebase_url": "https://employeeattendance-f9dae.firebaseio.com",
+    "project_id": "employeeattendance-f9dae",
+    "storage_bucket": "employeeattendance-f9dae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012538642467:android:e1c7fd6ac016e7c3686196",
+        "android_client_info": {
+          "package_name": "com.example.employeeattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012538642467-eeqbqoj535ob2btk4n3uaobvg1tk2tef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.employeeattendance",
+            "certificate_hash": "fd04f1ef2d72c1faa278c732477049bcdb3c6361"
+          }
+        },
+        {
+          "client_id": "1012538642467-kghpil6ro3rh5ii1aorrhbs8raf7f5j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGzYnhzvRpJ2nV4ZgREPJBDtuiFpz9vCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012538642467-kghpil6ro3rh5ii1aorrhbs8raf7f5j0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A2A2A</color>
+    <color name="colorPrimaryDark">#02020B</color>
+    <color name="colorAccent">#4A4A4a</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="card1">#02020B</color>
+    <color name="card2">#22333B</color>
+    <color name="card3">#0A2239</color>
+    <color name="card4">#2A2A2A</color>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EmployeeAttendance</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_proceed"><![CDATA[Save & Proceed]]></string>
+    <string name="question_mark"><![CDATA[\?]]></string>
+    <string name="register_new_user">Register New User</string>
+    <string name="check_in_checkout">Check In / Checkout</string>
+    <string name="log_in_edit"><![CDATA[Log in & edit]]></string>
+    <string name="modify_delete_user">Modify / Delete User</string>
+    <string name="attendance_log">Attendance Log</string>
+</resources>
